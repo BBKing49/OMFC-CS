@@ -26,7 +26,7 @@ for datafile = datafiles
     option.tolerance = 10.^-6;
     for iter = 1:1
         tic;
-        [U, V, w, Hs, Hc, loss] = MVFCM_JRLCP(data,option);
+        [U, V, w, Hs, Hc] = MVFCM_JRLCP(data,option);
         t(iter)=toc;
         
         pred_labels = vec2lab(U');
