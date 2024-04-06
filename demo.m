@@ -13,10 +13,7 @@ for datafile = datafiles
         [N,d(i)] = size(data{i});
         data{i} = mapminmax(data{i}', 0, 1)';
     end
-    
-    ij = 1;
-    best_nmi = 0;iter_param=1;
-    
+        
     option.com_dim = 50;
     option.lambda1 = 10.^-3 ;
     option.lambda2 = 10.^-3 ;
